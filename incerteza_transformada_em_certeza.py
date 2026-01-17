@@ -9,10 +9,11 @@ y_real = [1] * 20 + [0] * 180 # lista com 200 elementos, sendo os 20 primeiros c
 # O diagnóstico detectou 18 das 20 falhas (90%) e nenhum falso positivo
 y_pred = [1] * 18 + [0] * 2 + [0] * 180  # lista com 200 elementos, sendo os 18 primeiros com 1 e os próximos 180 com 0
 
-print(y_real)
-print(y_pred)
+print(f'y_real:\n {y_real}')
+print(f'y_pred:\n {y_pred}')
 # Gerando a Matriz
 cm = confusion_matrix(y_real, y_pred)
+print(f'Confusion Matrix:\n {cm}')
 
 # Visualização
 plt.figure(figsize=(7, 5))
