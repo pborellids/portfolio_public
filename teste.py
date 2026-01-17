@@ -7,6 +7,9 @@ from sklearn.metrics import confusion_matrix
 #  TN (modelo acertou a previsão de chamada NOK) | FP (modelo errou a previsão de chamada OK)
 #  FN (modelo errou a previsão de chamada NOK) | TP (modelo acertou a previsão de chamada OK)
 # Negativo = 'chamada NOK' | Positivo = 'chamada OK'
+# Na caso atual, temos:
+# TN = 3 | FP = 1
+# FN = 0 | TP = 2
 y_true = ['chamada NOK', 'chamada OK', 'chamada OK', 'chamada NOK', 'chamada NOK', 'chamada NOK']
 y_pred = ['chamada NOK','chamada OK', 'chamada OK', 'chamada NOK', 'chamada OK', 'chamada NOK']
 cm = confusion_matrix(y_true, y_pred)
