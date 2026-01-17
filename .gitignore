@@ -1,0 +1,14 @@
+# Python: arquivos temporários e cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Bancos de Dados: para não subir o banco SQLite (opcional, mas recomendado)
+*.db
+*.sqlite3
+
+# VS Code: configurações específicas da sua máquina
+.vscode/
+.history/
