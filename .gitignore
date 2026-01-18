@@ -10,5 +10,5 @@ venv/
 *.sqlite3
 
 # VS Code: configurações específicas da sua máquina
-.vscode/
+# .vscode/
 .history/
