@@ -13,7 +13,7 @@ print(f'y_real:\n {y_real}')
 print(f'y_pred:\n {y_pred}')
 # Gerando a Matriz
 cm = confusion_matrix(y_real, y_pred)
-print(f'Confusion Matrix:\n {cm}')
+print(f'Confusion Matrix:\n 1 = Positivo = Falha, 0 = Negativo = Sucesso\n {cm}')
 
 # Visualização
 plt.figure(figsize=(7, 5))

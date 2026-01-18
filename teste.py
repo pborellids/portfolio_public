@@ -14,3 +14,4 @@ y_true = ['chamada NOK', 'chamada OK', 'chamada OK', 'chamada NOK', 'chamada NOK
 y_pred = ['chamada NOK','chamada OK', 'chamada OK', 'chamada NOK', 'chamada OK', 'chamada NOK']
 cm = confusion_matrix(y_true, y_pred)
 print(cm)
+print(2)
