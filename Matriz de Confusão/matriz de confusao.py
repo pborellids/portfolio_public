@@ -4,9 +4,10 @@ from sklearn.metrics import confusion_matrix
 
 # Para definir o negativo e o positivo, o scikit-learn considera as classes na ordem alfabética por padrão.
 # Ou seja, uma matriz de confusão 2 x 2 é entendida pelo comando confusion_matrix() desta forma:
-#  TN (modelo acertou a previsão de chamada NOK) | FP (modelo errou a previsão de chamada OK)
-#  FN (modelo errou a previsão de chamada NOK) | TP (modelo acertou a previsão de chamada OK)
+#  TN (modelo previu NOK e foi NOK) | FP (modelo previu OK e foi NOK)
+#  FN (modelo previu NOK mas foi OK) | TP (modelo previu OK e foi OK)
 # Negativo = 'chamada NOK' | Positivo = 'chamada OK'
+# O interesse é monitorar o negativo (chamadas NOK).
 # Na caso atual, temos:
 # TN = 3 | FP = 1
 # FN = 0 | TP = 2
